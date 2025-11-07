@@ -4,15 +4,12 @@ import com.countingcost.components.core.*;
 import com.countingcost.components.peripheral.*;
 import com.countingcost.components.storage.*;
 import com.countingcost.pc.PC;
-import com.countingcost.reporting.*;
 import java.text.NumberFormat;
 import java.util.Locale;
 
 public class App {
 
     public static void main(String[] args) {
-        System.out.println("Merakit PC...");
-
         Motherboard mobo = new Motherboard("ASUS ROG STRIX", 4000000, 6);
         CPU cpu = new CPU("Intel Core i7", 6000000, 4);
         RAM ram = new RAM("Kingston FURY 32GB", 2000000, 32);
@@ -28,12 +25,40 @@ public class App {
 
         Locale indonesia = new Locale.Builder().setLanguage("id").setRegion("ID").build();
         NumberFormat formatter = NumberFormat.getCurrencyInstance(indonesia);
+
+        System.out.println("--- PC Build by Team Tim 1 ---");
+
+        System.out.println("CPU: " + myPC.getCPU().getNama());
+        System.out.println("Motherboard: " + myPC.getMotherboard().getNama());
+        System.out.println("RAM: " + myPC.getRAM().getNama());
+
+        for (Storage s : myPC.getDaftarPenyimpanan()) {
+            if (s instanceof SSD) {
+                System.out.println("Storage (SSD): " + s.getNama());
+            } else if (s instanceof CloudStorage) {
+                System.out.println("Storage (Cloud): " + s.getNama());
+            } else {
+                System.out.println("Storage: " + s.getNama());
+            }
+        }
+
+        for (Peripheral p : myPC.getDaftarPeriferal()) {
+            if (p instanceof Monitor) {
+                System.out.println("Peripheral (Monitor): " + p.getNama());
+            } else if (p instanceof Keyboard) {
+                System.out.println("Peripheral (Keyboard): " + p.getNama());
+            } else if (p instanceof Mouse) {
+                System.out.println("Peripheral (Mouse): " + p.getNama());
+            } else {
+                System.out.println("Peripheral: " + p.getNama());
+            }
+        }
+
+        System.out.println("---------------------------------");
+
         double total = myPC.calculateTotalPrice();
+        System.out.println("Final Price: " + formatter.format(total));
 
-        System.out.println("Rakitan Selesai!");
-        System.out.println("TOTAL HARGA: " + formatter.format(total));
-
-        PCReportGenerator report = new PCReportGenerator();
-        report.generateReport(myPC);
+        System.out.println("--- Build Successful! ---");
     }
 }
