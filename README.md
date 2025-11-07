@@ -1,18 +1,54 @@
-## Getting Started
+# Proyek PBO Kelompok 1: Kalkulator Biaya Rakit PC (CountingCost)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Ini adalah repositori untuk proyek mata kuliah Pemrograman Berorientasi Objek (PBO) oleh Kelompok 1.
 
-## Folder Structure
+## 🧾 Deskripsi Singkat
 
-The workspace contains two folders by default, where:
+**CountingCost** adalah aplikasi konsol (command-line) sederhana yang dibangun dengan Java untuk mensimulasikan proses perakitan PC dan menghitung total biayanya.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Aplikasi ini mendemonstrasikan penerapan konsep-konsep inti Pemrograman Berorientasi Objek (PBO) untuk mengelola berbagai jenis komponen komputer dan harganya.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 💻 Konsep PBO yang Digunakan
 
-## Dependency Management
+Proyek ini dirancang untuk menerapkan beberapa pilar utama PBO:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+* **Inheritance (Pewarisan):**
+    * Sebuah *abstract class* `Component` menjadi dasar, mewarisi properti `nama` dan `price`.
+    * Class ini diturunkan menjadi *abstract class* lain yang lebih spesifik: `Core`, `Peripheral`, dan `Storage`.
+    * Class-class spesifik seperti `CPU`, `Motherboard`, `RAM`, `Monitor`, `Keyboard`, `Mouse`, dan `SSD` mewarisi sifat dari *parent class* mereka.
+
+* **Polymorphism:**
+    * Class `PC` menggunakan `List<Storage>` dan `List<Peripheral>` untuk menyimpan berbagai jenis komponen.
+    * Saat metode `calculateTotalPrice()` dipanggil, ia dapat mengiterasi *list* tersebut dan memanggil metode `.getPrice()` pada setiap objek (baik itu `SSD`, `CloudStorage`, `Monitor`, atau `Mouse`) secara seragam, meskipun tipe objeknya berbeda-beda.
+
+* **Composition (Komposisi):**
+    * Class `PC` tidak mewarisi dari komponen, melainkan *memiliki* (has-a) komponen.
+    * Sebuah objek `PC` "terdiri dari" (`composed of`) objek `Motherboard`, `CPU`, `RAM`, serta `List` dari `Storage` dan `Peripheral`.
+
+---
+
+## 🚀 Cara Menjalankan
+
+Proyek ini dapat dijalankan melalui terminal dari *root folder* proyek (folder `pbo_kelompok_1`).
+
+1.  **Compile (dari root folder):**
+    Perintah ini akan meng-compile semua file `.java` dari folder `src` dan menempatkan file `.class` ke dalam folder `bin`.
+
+    ```bash
+    javac -d bin src/com/countingcost/App.java
+    ```
+
+2.  **Run (dari root folder):**
+    Perintah ini akan menjalankan program dengan menggunakan file `.class` yang ada di dalam folder `bin`.
+
+    ```bash
+    java -cp bin com.countingcost.App
+    ```
+
+---
+
+## 🖥️ Contoh Output
+
+Berikut adalah contoh output yang akan ditampilkan di terminal saat program dijalankan:
