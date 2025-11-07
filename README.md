@@ -51,7 +51,6 @@ Proyek ini dapat dijalankan melalui terminal dari *root folder* proyek (folder `
 
 ## 🌀 Personal Reflection
 
-*Bagian ini diisi oleh setiap anggota kelompok secara individu sesuai instruksi Misi 5.*
 
 ### 👤 [Hammam Hidayatullah]
 
