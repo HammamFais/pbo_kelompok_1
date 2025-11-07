@@ -48,3 +48,38 @@ Proyek ini dapat dijalankan melalui terminal dari *root folder* proyek (folder `
     ```
 
 ---
+
+---
+
+## 🌀 Personal Reflection
+
+*Bagian ini diisi oleh setiap anggota kelompok secara individu sesuai instruksi Misi 5.*
+
+### 👤 [Tulis Nama Anggota 1 Di Sini]
+
+* **Momen “Aha!” Terbesar:**
+    * *Jelaskan momen "klik" Anda di sini (baik saat mendesain, refactor, menyerang, atau bertahan)...*
+* **Kelemahan Terbesar Saya/Tim:**
+    * *Jelaskan serangan Red Team yang paling 'menyakitkan' dan mengapa kelemahan itu bisa ada dalam desain awal Anda...*
+* **Skill Baru Paling Berharga:**
+    * *Jelaskan skill (desain UML, refactoring, audit kode, defense argumen) yang paling berguna untuk kerja nanti dan mengapa...*
+
+### 👤 [Tulis Nama Anggota 2 Di Sini]
+
+* **Momen “Aha!” Terbesar:**
+    * *Jelaskan momen "klik" Anda di sini (baik saat mendesain, refactor, menyerang, atau bertahan)...*
+* **Kelemahan Terbesar Saya/Tim:**
+    * *Jelaskan serangan Red Team yang paling 'menyakitkan' dan mengapa kelemahan itu bisa ada dalam desain awal Anda...*
+* **Skill Baru Paling Berharga:**
+    * *Jelaskan skill (desain UML, refactoring, audit kode, defense argumen) yang paling berguna untuk kerja nanti dan mengapa...*
+
+### 👤 [Tulis Nama Anggota 3 Di Sini]
+
+* **Momen “Aha!” Terbesar:**
+    * *Jelaskan momen "klik" Anda di sini (baik saat mendesain, refactor, menyerang, atau bertahan)...*
+* **Kelemahan Terbesar Saya/Tim:**
+    * *Jelaskan serangan Red Team yang paling 'menyakitkan' dan mengapa kelemahan itu bisa ada dalam desain awal Anda...*
+* **Skill Baru Paling Berharga:**
+    * *Jelaskan skill (desain UML, refactoring, audit kode, defense argumen) yang paling berguna untuk kerja nanti dan mengapa...*
+
+*(Silakan salin-tempel blok di atas jika anggota kelompokmu lebih dari 3)*
