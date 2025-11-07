@@ -48,7 +48,3 @@ Proyek ini dapat dijalankan melalui terminal dari *root folder* proyek (folder `
     ```
 
 ---
-
-## 🖥️ Contoh Output
-
-Berikut adalah contoh output yang akan ditampilkan di terminal saat program dijalankan:
